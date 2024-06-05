@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "repository": "github.com/chralp/heyburrito",
   "scripts": {
-    "start": "NODE_ENV=production ts-node ./src/server.ts",
+    "start": "NODE_ENV=production ts-node -T ./src/server.ts",
     "dev": "NODE_ENV=development nodemon --ignore '/test/*.ts' --watch '*.ts' --exec 'ts-node' ./src/server.ts",
     "mockDB": "ts-node ./test/lib/mockDatabase.ts",
     "test": "NODE_ENV=testing mocha -r ts-node/register test/*-test.ts --exit",
